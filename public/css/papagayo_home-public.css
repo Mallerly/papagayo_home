@@ -1,0 +1,208 @@
+/**
+* All of the CSS for your public-facing functionality should be
+* included in this file.
+*/
+
+.cuerpoHomeCaja1 .HomeCaja1 {
+  padding: 30px 52px 30px 52px;
+  height: 34em;
+}
+.cuerpoHomeCaja1 .HomeCaja1 .CajaImg{
+  padding: 0px;
+  border-left: 2px solid lightgray;
+}
+.cuerpoHomeCaja1 .HomeCaja1 .CajaTexto{
+  background: white;
+  height: 25em;
+  padding: 15px 45px 15px 45px;
+  border-top: 2px solid lightgray;
+}
+.cuerpoHomeCaja1 .HomeCaja1 .CajaTexto h3{
+  color: #006ec1;
+  font-weight: bold;
+  padding-left: 0px;
+}
+.cuerpoHomeCaja1 .HomeCaja1 .CajaTexto p{
+  color: #006ec1;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.cuerpoHomeCaja2{
+  background: rgb(0, 158, 229);
+}
+.cuerpoHomeCaja2 .HomeCaja2{
+  padding: 55px 36px 55px 36px;
+}
+
+.cuerpoHomePrivate {
+  background-color: white;
+  padding: 0px !important;
+}
+.cuerpoHomePrivate .homePrivate1{
+  padding: 0px;
+}
+.cuerpoHomePrivate .homePrivate1 .homePrivate1-1{
+  padding: 0px;
+}
+.cuerpoHomePrivate .homePrivate1 .homePrivate1-2 h2{
+  color: #006ec1;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.cuerpoHomePrivate .homePrivate1 .homePrivate1-2 p{
+  color: #006ec1;
+  font-size: 18px;
+  padding: 15px 10px 15px 15px;
+}
+
+.homePrivate2{
+  background: #006ec1;
+  margin-top: -5px;
+  height: 38em;
+}
+.homePrivate3{
+padding: 0px !important;
+}
+.homePrivate4{
+padding: 0px !important;
+}
+
+.homePrivate3 .cuerpoHomeCaja1{
+  top: 0px !important;
+}
+.homePrivate4 .cuerpoHomeCaja2{
+  margin-top: 0px !important;
+}
+
+.ovalado{
+  width: 210px !important;
+  height: 200px !important;
+  background: grey !important;
+  border-radius: 143px !important;
+}
+.homePrivate2 .enlaceModuloAula{
+  text-align: center;
+}
+.homePrivate2 h2{
+  color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+.homePrivate2 .enlaceModuloAula a{
+    background: white;
+    padding: 15px 30px 15px 29px;
+    border-radius: 7px;
+    color: #006ec1;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cuadradohover{
+
+  height: 386px;
+}
+.cuadradohover:hover {
+    border-color: #26779C;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 9px #ccc;
+    -moz-box-shadow: 0 4px 9px #ccc;
+    box-shadow: 0 4px 9px #ccc;
+}
+
+.ovalado:hover {
+    border-color: #26779C;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 9px #ccc;
+    -moz-box-shadow: 0 4px 9px #ccc;
+    box-shadow: 0 4px 9px #ccc;
+}
+
+.homePrivate1 p{
+text-align: center;
+}
+.ovalado {
+    width: 210px !important;
+    height: 200px !important;
+    background: #fcf8e3 !important;
+    border-radius: 143px !important;
+}
+.ovalado h3{
+   color: #006ec1;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .ovalado p{
+    padding-top: 2px;
+    padding-left: 19px;
+    color: #006ec1;
+    text-align: center;
+  }
+
+ /*
+ Style de Preguntas Frecuentes
+
+*/
+
+.cuerpopreguntasf {
+  border-top: solid 2px blue;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+.cuerpopreguntasf .borde {
+  padding-left: 80px;
+  margin-right: 45px !important;
+  
+}
+
+.cuerpopreguntasf .borde h2 {
+  padding-left: 0px;
+  padding-right: 1px;
+  text-align: left;
+  font-size: 1.3em;
+  color:  #094fa4;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-top: 2.3em;
+}
+
+    .cuerpopreguntasf .borde .plegable-1 {
+      background-color: white;
+    }
+      .cuerpopreguntasf .plegable-1 {
+        border-top: solid 1px #49a8e6;
+      }
+      
+    .cuerpopreguntasf .borde>.plegable p {
+        padding-top:20px;
+        color:  #094fa4;
+        text-align: justify;
+        padding-left: 0px;
+        font-size: 15px;
+    }
+    .cuerpopreguntasf .borde>.plegable-1 p {
+        padding-top:20px;
+        color: #094fa4;
+        text-align: justify;
+         font-size: 15px;
+        padding-left: 0px;
+    }
+
+     .cuerpopreguntasf .borde>h2 span {
+
+        display: block;
+        float: right;
+
+      } 
+      .cuerpopreguntasf .plegable{
+        border-top: solid 1px #49a8e6;
+      }
+
+
+      
