@@ -42,8 +42,13 @@
 .cuerpoHomePrivate .homePrivate1{
   padding: 0px;
 }
+
+.cuerpoHomePrivate .homePrivate1-2 {
+ padding-right: 75px;
+}
 .cuerpoHomePrivate .homePrivate1 .homePrivate1-1{
   padding: 0px;
+
 }
 .cuerpoHomePrivate .homePrivate1 .homePrivate1-2 h2{
   color: #006ec1;
@@ -53,9 +58,11 @@
 }
 
 .cuerpoHomePrivate .homePrivate1 .homePrivate1-2 p{
-  color: #006ec1;
-  font-size: 18px;
-  padding: 15px 10px 15px 15px;
+    color: #006ec1;
+    font-size: 18px;
+    padding: 15px 10px 15px 15px;
+    line-height: 30px;
+    text-align: justify;
 }
 
 .homePrivate2{
@@ -103,7 +110,7 @@ padding: 0px !important;
 
 .cuadradohover{
 
-  height: 386px;
+  height: 30em;
 }
 .cuadradohover:hover {
     border-color: #26779C;
@@ -149,7 +156,7 @@ text-align: center;
 */
 
 .cuerpopreguntasf {
-  border-top: solid 2px blue;
+  border-top: solid 2px #006ec1;
   background-color: white;
   width: 100%;
   height: auto;
@@ -181,17 +188,19 @@ text-align: center;
       
     .cuerpopreguntasf .borde>.plegable p {
         padding-top:20px;
-        color:  #094fa4;
+        color:  #49a8e6;
         text-align: justify;
         padding-left: 0px;
         font-size: 15px;
+        line-height: 30px;
     }
     .cuerpopreguntasf .borde>.plegable-1 p {
         padding-top:20px;
-        color: #094fa4;
+        color:#49a8e6;
         text-align: justify;
          font-size: 15px;
         padding-left: 0px;
+        line-height: 30px;
     }
 
      .cuerpopreguntasf .borde>h2 span {
@@ -205,4 +214,3 @@ text-align: center;
       }
 
 
-      

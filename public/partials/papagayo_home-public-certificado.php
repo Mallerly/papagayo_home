@@ -13,27 +13,22 @@
  */
 ?>
 	
-<div class="form">
+<form class="form"  >
 	<h4> Buscador </h4>
-		<div class="formgroup col-md-12" >
+		<div class="formgroup col-sm-12" >
 			<p><label class="controllabel col-sm-3"  for="nombrecontacto">Cédula de Identidad :</label></p>
-			<div class="col-sm-5"><input id="numerocedula" class="form-control"  name="nombrecontacto"  type="text" placeholder=""  required""/></div>	
+			<div class="col-sm-3"><input id="cedula" class="form-control"  name="cedula"  type="text" placeholder=""  required=""/></div>	
+			<div class="col-sm-3"> <p><button class="btn btn-primary pull-center " type="submit">Buscar</button></p> </div>
 		</div>
-		<p><button class="btn btn-primary pull-right" type="submit">Buscar</button></p>
-		
 		<div class="formgroup col-md-12" >
-			<p ><label class="controllabel col-sm-3"  for="resultado">Total: encontrado 0 resultados </label></p>
-					
+			<p ><label class="controllabel col-sm-3"  for="resultado">Total: encontrado 0 resultados </label></p>		
 		</div>
 
-</div>
-
+</form>
 
 
 <style>
-.cert{
-	padding-bottom: 20px;
-}
+
 
 h4{
 	text-align: center;
@@ -46,7 +41,7 @@ h4{
 }
 
 .formgroup{
-	padding-left: 150px;
+	margin-left: 285px;
 	margin-bottom: 70px;
 }
 .controllabel{
@@ -61,7 +56,7 @@ h4{
 	margin-top: -9px;
 }
 .btn{
-	margin-right: 450px;
-	margin-top: -104px;
+	margin-right: 330px;
+	margin-top: -10px;
 }
 </style>

@@ -8,91 +8,71 @@
 ?>
 
 	
-    <h2>Imagen de cabecera</h2>
-
+    <h2> Home Privado </h2>
 
 
 <h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
 <div class="wrap">
     <form method="post" action="options.php">
 		<?php
-		settings_fields( 'page_configuracion_contactos' );
-		do_settings_sections( 'page_configuracion_contactos' );
+		settings_fields( 'page_configuracion_aulavirtual' );
+		do_settings_sections( 'page_configuracion_aulavirtual' );
 		?>
         <table class="form-table">
             <tbody class="form-table">
             <tr>
                 <th scope="row">
-                    <label for="contenido"> Titulo 1 </label>
+                    <label for="contenido"> URL Del Video </label>
                 </th>
 
                 <td>
                     <input type="textarea"
-                           value="<?php echo get_option( 'contenido' ); ?>"
-                           name="contenido"
+                           value="<?php echo get_option( 'urlvideo' ); ?>"
+                           name="urlvideo"
                            placeholder=""
                            class="regular-text">
                     <p class="description" id="tagline-description">
-                        
+                        Coloca la URL del Video 
                     </p>
                 </td>
             </tr>
             <tr>
                 <th scope="row">
-                    <label for="contenido"> Descripción </label>
-                </th>
-                
-                <td>
-                    <input type="textarea"
-                           value="<?php echo get_option( 'descripcion' ); ?>"
-                           name="descripcion"
-                           placeholder=""
-                           class="regular-text">
-                    <p class="description" id="tagline-description">
-                        
-                    </p>
-                </td>
-
-
-            </tr>
-            <tr>
-                <th scope="row">
-                    <label for="contenido"> Titulo 2 </label>
+                    <label for="contenido"> Título del Video  </label>
                 </th>
 
                 <td>
                     <input type="textarea"
-                           value="<?php echo get_option( 'titulo2' ); ?>"
-                           name="titulo2"
+                           value="<?php echo get_option( 'titulovideo' ); ?>"
+                           name="titulovideo"
                            placeholder=""
                            class="regular-text">
                     <p class="description" id="tagline-description">
-                        
+                        Ingresa Título del Video  
                     </p>
                 </td>
             </tr>
             <tr>
                 <th scope="row">
-                    <label for="contenido"> Descripción </label>
+                    <label for="contenido"> Descripción  del Video  </label>
                 </th>
-                
+
                 <td>
                     <input type="textarea"
-                           value="<?php echo get_option( 'descripcion2' ); ?>"
-                           name="descripcion2"
+                           value="<?php echo get_option( 'descripcionvideo' ); ?>"
+                           name="descripcionvideo"
                            placeholder=""
                            class="regular-text">
                     <p class="description" id="tagline-description">
-                        Ingresar Números de Teléfonos 
+                        Ingresa Título del Video  
                     </p>
                 </td>
-
-                
             </tr>
             </tbody>
             </table>
 		<?php submit_button( 'Save Settings' ); ?>
     </form>
+
 </div>
 
 <?php  

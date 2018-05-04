@@ -184,9 +184,13 @@ class Papagayo_home {
 		// Pagina Configuracion Contactos
 
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_menu_contactos' );
+
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'register_setting_field' );
 
+		// Pagina Configuracion Home Private
+			$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_menu_aulavirtual' );
 
+			$this->loader->add_action( 'admin_init', $plugin_admin, 'register_setting_field_aulavirtual' );
 
 
 

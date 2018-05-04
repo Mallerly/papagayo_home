@@ -592,6 +592,24 @@ function create_quienessomos1_cpt() {
 			include(plugin_dir_path(__FILE__) . 'partials/page_configuration_contactos.php');
 		}
 
+
+		public function add_menu_aulavirtual() {
+
+			add_submenu_page(
+				'options-general.php',
+				'Configuración Aula Virtual',
+				'Configuración Aula Virtual',
+				'manage_options',
+				'options-aulavirtual',
+				array($this, 'page_configu_aulavirtual')
+			);
+		}
+
+		public function page_configu_aulavirtual() {
+			include(plugin_dir_path(__FILE__) . 'partials/page_configuration_aulavirtual.php');
+		}
+		
+
 		//////////////  METABOX AULA VIRTUAL   ////////////
 
 		function aulavirtual_meta_box( $meta_boxes ) {
@@ -605,16 +623,7 @@ function create_quienessomos1_cpt() {
 				'priority' => 'default',
 				'autosave' => true,
 				'fields' => array(
-					array(
-						'id' => $prefix . 'date_3',
-						'type' => 'date',
-						'name' => esc_html__( 'Fecha Inicio', 'metabox-online-generator' ),
-					),
-					array(
-						'id' => $prefix . 'date_4',
-						'type' => 'date',
-						'name' => esc_html__( 'Fecha Culminacion', 'metabox-online-generator' ),
-					),
+					
 					array(
 						'id' => $prefix . 'file_input_1',
 						'type' => 'file_input',
@@ -685,5 +694,16 @@ function create_quienessomos1_cpt() {
 
 		}
 
+		public function register_setting_field_aulavirtual() {
+			register_setting('page_configuracion_aulavirtual', 'urlvideo', 'strval');
+			register_setting('page_configuracion_aulavirtual', 'titulovideo', 'strval');
+			register_setting('page_configuracion_aulavirtual', 'descripcionvideo', 'strval');
+			
 
+
+		}
+
+
+
+	
 }

@@ -245,6 +245,50 @@ function publicidad_papagayo_prueba($atts, $content = null) {
 		return ob_get_clean();
 	}
 
+	function shortcode_videohomeprivate( $atts ) {
+		// Attributes
+		ob_start();
+		$atts = shortcode_atts(
+			array(
+				'limite'    => '1',
+				'post_type' => 'videos',
+				'orderby'   => 'date',
+				'order'     => 'ASC',
+				'cat'       => '',
+				'slug'      => '',
+			),
+			$atts,
+			'new_shortcode'
+		);
+		// Attributes in var
+		$limite    = $atts['limite'];
+		$post_type = $atts['post_type'];
+		$orderby   = $atts['orderby'];
+		$order     = $atts['order'];
+		$cat       = $atts['cat'];
+		$slug      = $atts['slug'];
+
+		$query = array(
+			'posts_per_page'      => $limite,
+			'post_type'           => $post_type,
+			'orderby'             => $orderby,
+			'order'               => $order,
+			'post_status'         => 'publish',
+			'ignore_sticky_posts' => 1,
+			'cat'	 								=> $cat,
+			'slug'	 							=> $slug,
+		);
+
+		$q     = new WP_Query( $query );
+		$buton = "Saber Más";
+		$n     = 0;
+
+		include plugin_dir_path( __FILE__ ) . '/partials/papagayo_home-public-videoshomeprivate.php';
+
+		return ob_get_clean();
+
+	}
+
 
 
 
@@ -260,6 +304,7 @@ function publicidad_papagayo_prueba($atts, $content = null) {
 		add_shortcode( 'papagayo_publicidad', array( $this, 'publicidad_papagayo_prueba' ) );
 		add_shortcode( 'form_contactanos', array( $this, 'shortcode_formcontactanos'));
 		add_shortcode( 'certificado', array( $this, 'shortcode_certificado'));
+		add_shortcode( 'videoarticulo_home_private', array( $this, 'shortcode_videohomeprivate'));
 	}
 
 

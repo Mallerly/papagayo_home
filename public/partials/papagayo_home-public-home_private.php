@@ -12,6 +12,8 @@
 * @subpackage Papagayo_home/public/partials
 */
 
+//$idcat = get_option( 'cont' );
+
 if ( $q->have_posts() ) :
 
 	?>
@@ -19,21 +21,7 @@ if ( $q->have_posts() ) :
 	<!-- This file should primarily consist of HTML with a little bit of PHP. -->
 	<div class="cuerpoHomePrivate col-md-12 col-sm-12 col-xs-12">
 
-		<?php while ( $q->have_posts() ) :
-			$q->the_post(); ?>
-
-			<div class="homePrivate1 col-md-12 col-sm-12 col-xs-12">
-				<div class="homePrivate1-1 col-md-8 col-sm-8 col-xs-8">
-					<iframe title="YouTube video player" width="900" height="600" src="http://www.youtube.com/embed/krqjM5GmqzQ" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="homePrivate1-2 col-md-4 col-sm-4 col-xs-4">
-					<h2><?php the_title()?></h2>
-					<?php echo wpautop(the_content()) ?>
-					
-				</div>
-			</div>
-
-		<?php endwhile; ?>
+		<?php echo do_shortcode('[videoarticulo_home_private ]'); ?>
 
 		<div class="homePrivate2 col-md-12 col-sm-12 col-xs-12">
 			<h2>Unidades del aula virtual</h2>
